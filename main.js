@@ -34,7 +34,28 @@ const person = {
 console.log(Object.entries(person))
 
 // Create an arrayOfPersons that contains multiple "people" objects. You can simplify copy/paste the person object you made above multiple times. Feel free to change the values to reflect multiple people you might have in your database.
-
+const arrayOfPersons = {
+  [
+    const person1 = {
+      firstName: "Jane",
+      lastName: "Doe",
+      birthDate: "Jan 5, 1925",
+      gender: "female"
+    },
+    const person2 = {
+      firstName: "John",
+      lastName: "Doe",
+      birthDate: "Jan 25, 1905",
+      gender: "male"
+    },
+    const person3 = {
+      firstName: "Baby",
+      lastName: "Doe",
+      birthDate: "Jan 5, 1945",
+      gender: "female"
+     }
+]
+}
 // Create a function that uses a for..of loop and an if statement to console.log the value associated with the key birthDate of each object if the birth year is an odd number.
 
 // Use .map() to map over the arrayOfPersons and console.log() their information.
