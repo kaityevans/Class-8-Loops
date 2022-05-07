@@ -1,14 +1,14 @@
 console.clear()
 // Use a do...while loop to console.log the numbers from 1 to 1000.
-// const countNums = () => {
-//   let num = 0;
-//   do {
-//     num += 1;
-//     console.log(num)
-//   } while (num <= 1000);
-// }
+const countNums = () => {
+  let num = 0;
+  do {
+    num++;
+    console.log(num)
+  } while (num < 1000);
+}
 // countNums()
-// console.log(countNums())
+console.log(countNums())
 
 
 // Create an object (with keys and values) called person with the following data:
@@ -44,11 +44,11 @@ const arrayOfPersons = [
 // associated with the key birthDate of each object if the birth year is an odd number.
 const loopOverArray = (arrayOfPersons) => {
   for (birthDate of arrayOfPersons) {
-    if (arrayOfPersons.entries(birthDate) % 2 === 0){
-    // console.log(birthDate)}
+    if (arrayOfPersons.entries(birthDate) %2 === 0){
+    console.log(birthDate)}
   }
 }
-console.log(loopOverArray(birthDate))
+// console.log(loopOverArray(birthDate))
 // Use .map() to map over the arrayOfPersons and console.log() their information.
 
 // Use .filter() to filter the persons array and console.log 0only males in the array.
