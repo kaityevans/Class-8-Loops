@@ -1,14 +1,14 @@
 console.clear()
 // Use a do...while loop to console.log the numbers from 1 to 1000.
-const countNums = () => {
-  let num = 0;
-  do {
-    num++;
-    console.log(num)
-  } while (num < 1000);
-}
+// const countNums = () => {
+//   let num = 0;
+//   do {
+//     num++;
+//     console.log(num)
+//   } while (num < 1000);
+// }
 // countNums()
-console.log(countNums())
+// console.log(countNums())
 
 
 // Create an object (with keys and values) called person with the following data:
@@ -26,13 +26,15 @@ const person = {
 
 
 // Create a function that logs out the keys to the object using Object.keys()
-// const keysFunction = () => {
+const keysFunction = () => {
   console.log(Object.keys(person))
-
+  }
+  keysFunction()
 // Create a function that logs out the keys and values of the object using Object.entries()
-
+  const objectEntries = () => {
 console.log(Object.entries(person))
-
+  }
+  objectEntries()
 // Create an arrayOfPersons that contains multiple "people" objects. You can simplify copy/paste the person object you made above multiple times. Feel free to change the values to reflect multiple people you might have in your database.
 const arrayOfPersons = [
      person1 = {firstName: "Jane", lastName: "Doe", birthDate: "Jan 5, 1925", gender: "female"},
@@ -42,12 +44,19 @@ const arrayOfPersons = [
 // console.log(arrayOfPersons)
 // Create a function that uses a for..of loop and an if statement to console.log the value 
 // associated with the key birthDate of each object if the birth year is an odd number.
-const loopOverArray = (arrayOfPersons) => {
-  for (birthDate of arrayOfPersons) {
-    if (arrayOfPersons.entries(birthDate) %2 === 0){
-    console.log(birthDate)}
+const loopOverArray = () => {
+  let year = '';
+  let counter = 0;
+  for (const birthDate of arrayOfPersons) {
+    year = arrayOfPersons[counter].birthDate.slice(-4)
+    let numYear = parseInt(year)
+    if (numYear %2 == 1) {
+    console.log(numYear)
+    }
+    counter ++
   }
 }
+loopOverArray()
 // console.log(loopOverArray(birthDate))
 // Use .map() to map over the arrayOfPersons and console.log() their information.
 
