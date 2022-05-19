@@ -69,7 +69,7 @@ let maleOnly = arrayOfPersons.filter(y => y.gender == "male")
   
 // Create a function that returns true if the value of birthDate is before Jan 1, 1990.
 const birthBefore90 = () => {
-  let beforeDate = arrayOfPersons.filter(z => z.birthDate <= "Jan 1, 1990")
+  let beforeDate = arrayOfPersons.filter(z >= z.birthDate <= "Jan 1, 1990")
   for (birthDate of arrayOfPersons){
      if (beforeDate){
     console.log(beforeDate)
@@ -84,6 +84,3 @@ const birthBefore90 = () => {
 console.log(birthBefore90())
 // Use .filter() to filter the persons array and console.log only people that were born before Jan 1, 1990.
 
-// BONUS - Create a function that returns true if the date passed to it is >= 21 years in the past.
-
-// BONUS - .filter() out the people in the array who are younger than 21.
